@@ -30,14 +30,14 @@ namespace ConsoleUI
             ProductManager productManager = new ProductManager(new EfProductDal());
             if (productManager.GetAll().Success==true)
             {
-                Console.WriteLine(productManager.GetAll().Message);
+                Console.WriteLine(productManager.GetAll());
                 foreach (var item in productManager.GetAll().Data)
                 {
                     Console.WriteLine("{0} ---- {1}", item.ProductName, item.UnitPrice);
                 }
             }
             else
-                Console.WriteLine(productManager.GetAll().Message);
+                Console.WriteLine(productManager.GetAll());
         }
     }
 }
