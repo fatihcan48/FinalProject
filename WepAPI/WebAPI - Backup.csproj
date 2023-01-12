@@ -4,16 +4,6 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <BaseOutputPath>C:\Users\fatih\Desktop\EnginDemirog_Kurslar\FinalProject\WepAPI\bin</BaseOutputPath>
-    <BaseIntermediateOutputPath>C:\Users\fatih\Desktop\EnginDemirog_Kurslar\FinalProject\WepAPI\obj</BaseIntermediateOutputPath>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>full</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>full</DebugType>
   </PropertyGroup>
 
   <ItemGroup>

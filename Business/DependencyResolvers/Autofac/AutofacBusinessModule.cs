@@ -35,12 +35,12 @@ namespace Business.DependencyResolvers.Autofac
             
 
 
-            // Eklediğimiz Aspect'in çalışması için bunu ekledik;
+            // Eklediğimiz Aspect'lerin çalışması için bunu ekledik;
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()
                 .EnableInterfaceInterceptors(new ProxyGenerationOptions()
-                {
+                { 
                     Selector = new AspectInterceptorSelector()
                 }).SingleInstance();
 
